@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Creator</title>
+    <link rel="stylesheet" href="meme.css">
+</head>
+<body>
+
+    <div id="background">
+        <body id="control">
+            
+          <h1>Meme Creator!</h1>
+          <form id="uploadForm">
+            <label for="imageLink" class="center">Image Link:</label>
+            <input type="text" id="imageLink" class="center" name="imageLink" required placeholder="Enter image link">
+        
+            <label for="topText" class="center" >Top Text:</label>
+            <input type="text" id="topText" class="center" name="topText" required placeholder="Enter text for top of image">
+            
+            <label for="bottomText" class="center" >Bottom Text:</label>
+            <input type="text" id="bottomText" class="center" name="bottomText" required placeholder="Enter text for bottom of image">
+            
+            <br>
+            
+            <input type="submit" value="Submit" class="submit">
+          </form>
+        
+          <div id="output-wrapper">
+            <div id="output"></div>
+          </div>
+    
+</body>
+<script src="meme.js"></script>
+</html>

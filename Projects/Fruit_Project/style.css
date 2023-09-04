@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline:1px solid rgb(214, 89, 0);
+  /* TODO */
+  
+}
+
+body {
+  /* TODO */
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background-image: linear-gradient(270deg, rgb(214, 89, 0), rgb(255, 200, 0));
+}
+
+input {
+  /* TODO */
+  /* outline-color: rgb(255, 153, 0); */
+  outline: outset rgb(255, 153, 0);
+  padding: 5px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.search-container {
+  /* TODO */
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.search-container input,
+.search-container .suggestions {
+  /* TODO */
+  width: 100%;
+  margin-top: 5px;
+  display: block;
+}
+
+.search-container input {
+  /* TODO */
+  background-color: rgb(247, 192, 115);
+  border: none;
+  padding: 5px;
+}
+
+.search-container .suggestions {
+  /* TODO */
+  display: none;
+  border: none;
+  padding: 0px;
+  background-color: rgb(247, 192, 115);
+  list-style: none;
+  margin: 0;
+}
+
+.search-container.show-results .suggestions {
+  display: block;
+}
+
+ul {
+  /* TODO */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.has-suggestions {
+  /* TODO */
+  margin-top: 5px;
+}
+
+ul li {
+  /* TODO */
+  cursor: pointer;
+  padding: 5px;
+}
+
+ul li:hover {
+  /* TODO */
+  background-color: rgba(243, 90, 2, 0.915) ;
+}
+
+.highlight {
+  font-weight: bold;
+}
